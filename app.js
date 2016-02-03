@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 // statically serve front end dependencies (bootstrap & jquery)
-
+app.use(express.static(__dirname + '/node_modules'))
 
 // serve static files 
 app.use(express.static(__dirname + '/public'))
